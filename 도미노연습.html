@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>도미노</title>
+<style>
+
+    * {
+        margin:0px; padding: 0px;
+        list-style: none;
+        box-sizing: border-box;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    body {
+        height: 3000px; width: 100%;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .wrap {
+        position: relative;
+        width: 100%; height: auto;
+    }
+
+    .top {
+        width: 100%; height: 100px;
+        position: relative;
+    }
+
+    .top1 {
+        width: 1100px; height: 100px;
+        line-height: 100px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .top1 > .butt1 {
+        width: 50px; height: 50px;
+        position: absolute; left: 20px; top: 23px;
+    }
+
+    .top1 > .butt1 > a {
+        display: block;
+        background: url(images/spr_btn.png);
+        width: 40px; height: 40px;
+        background-position: 12px -25px;
+    }
+
+   .cont1 {
+        position: absolute;
+        width: 320px; height: 30%;
+        top: 35px; left: 80px;
+        text-align: center;
+    }
+
+   .cont1 > ul {
+        position: relative; top: -5px;
+        width: 100%; height: 100%;
+    }
+
+    .cont1 > ul > li {
+        width: 93px; height: 25px; 
+        line-height: 25px;
+        float: left;
+        background-color: rgba(0, 0, 0, 0.1);
+        margin: 5px;
+        border-radius: 50px;
+        box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .cont1 > ul > li > a {
+        color: dimgrey;
+        display: block;
+    }
+
+    .logo{
+        background: url(images/logo1.png);
+        width: 245px; height: 57px;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+
+    .cont1_1 {
+        position: absolute; left: 70%; top: 35px;
+    }
+
+    .cart {
+        width: 50px; height: 50px;
+        position: absolute; right: 20px; top: 23px;
+    }
+
+    .cart > a {
+        display: block;
+        background: url(images/spr_btn.png);
+        width: 40px; height: 40px;
+        background-position: -35px 8px;
+    }
+
+    .nav {
+        background: url(images/bg_gnb.png);
+        width: 1119px; height: 56px;
+        margin: 0 auto;
+        position: relative; top: 30px;
+        z-index: 99999;
+    }
+
+    .nav > ul {
+        width: 90%; height: 100%;
+        margin: 0 auto;
+    }
+
+    .nav > ul > li {
+        float: left;
+        width: 140px; height: 56px;
+        margin-left: 1px;
+    }
+
+    .nav > ul > li a {
+        line-height: 50px;
+        width: 100%; height: 100%;
+        color: white;
+        text-align: center;
+        display: block;
+        transition: all 1s;
+    }
+
+    .nav > ul > li:hover > a {
+        border-bottom: 4px orange solid;
+        transition: none;
+        color: red;
+    }
+
+    .smenu {
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+        background: white;
+        height: 0;
+        transition: height .4s ease-out;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav > ul > li:hover > .smenu {
+        height: 180px;
+        color: blue;
+    }
+
+    .smenu > li > a {
+        color: black !important;
+    }
+
+    .smenu > ul > li:hover a {
+        color: red;
+        display: block;
+        background-color: red;
+    }
+
+</style>
+</head>
+<body>
+<div class="wrap"> 
+<div class="top1"> 
+<div class="butt1"><a href="#"></a></div>
+<div class="cont1"> 
+<ul>
+<li><a href="#">English</a></li>
+<li><a href="#">쿠폰</a></li>
+<li><a href="#">주문조회</a></li>
+</ul>
+</div>
+<div class="logo"><a href="#"></a></div>
+<div class="cont1 cont1_1"> 
+<ul>
+<li><a href="#">로그인</a></li>
+<li><a href="#">회원가입</a></li>
+</ul>
+</div>
+<div class="cart"><a href="#"></a></div>
+</div>
+<div class="nav"> 
+<ul>
+<li><a href="domino_sub1.html">피자</a>
+<ol class="smenu">
+<li><a href="#">슈퍼시드</a></li>
+<li><a href="#">프리미엄</a></li>
+<li><a href="#">클래식</a></li>
+</ol>
+</li>
+<li><a href="domino_sub2.html">사이드디시</a>
+<ol class="smenu">
+<li><a href="#">사이드디시</a></li>
+<li><a href="#">음료</a></li>
+<li><a href="#">피클&소스</a></li>
+</ol>
+</li>
+<li><a href="#">특가제품</a></li>
+<li><a href="#">내맘대로 피자</a>
+<ol class="smenu">
+<li><a href="#">하프&하프</a></li>
+<li><a href="#">마이키친</a></li>
+<li><a href="#">추가토핑안내</a></li>
+</ol>
+</li>
+<li><a href="#">이벤트&할인</a>
+<ol class="smenu">
+<li><a href="#">오늘의이벤트</a></li>
+<li><a href="#">마니아혜택</a></li>
+<li><a href="#">할인&제휴</a></li>
+</ol>
+</li>		
+<li><a href="#">E-쿠폰&상품권</a>
+<ol class="smenu">
+<li><a href="#">E쿠폰</a></li>
+<li><a href="#">상품권</a></li>
+</ol>
+</li>		
+<li><a href="#">선물하기</a>
+<ol class="smenu">
+<li><a href="#">전체</a></li>
+<li><a href="#">지류상품권</a></li>
+<li><a href="#">모바일상품권</a></li>
+</ol>
+</li>		
+</ul>
+</div>
+</div>
+</body>
+</html>

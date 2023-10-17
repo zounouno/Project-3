@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>골든타워</title>
+<style>
+
+   body {
+     color: #000;
+     font-size: 16px;
+     background-color: gray;
+   }
+ 
+   ul,ol {
+       margin: 0; padding: 0;
+       list-style: none;
+   } 
+   
+   li {
+       float: left;
+   }
+
+   a {
+       color: #333;
+       text-decoration: none;}
+    
+    #topmenu {
+       position: absolute; top: 0; right: 0; 
+    } 
+    
+    #topmenu > li {
+        line-height: 40px;
+        padding: 0 3px;
+        font-size: 10px;
+    } 
+    
+    #topmenu > li:hover> a {
+        color: red;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    
+    #navbox {
+        position: relative;
+        width: 1000px; height: 90px; 
+        margin: 0 auto;
+        z-index: 9999; 
+    } 
+    
+    #navibar {
+        position: absolute; bottom: 0; right: 0;
+        width: 570px; height: 60px; 
+    } 
+    
+    #navibar > ul {
+        width: 570px; margin: 0 auto;
+    } 
+    
+    #navibar > ul > li {
+        width: 114px; height: 60px;
+    }
+
+    #navibar > ul > li a {
+        display: block;
+        width: 100%; height: 100%;
+        color: lightskyblue;
+        text-decoration: none;
+        text-align: center;
+        font: bold 14px/50px "맑은 고딕",Verdana; 
+        transition: all .4s;
+    }
+
+    #navibar > ul > li a > .sub_tit1 {
+        font: Arial, "맑은 고딕" ;
+        font-size: 6px;
+        position: absolute; top: 15px; left:16px;
+    } 
+    
+    #navibar >ul >li a > .sub_tit2 {
+        font: Arial, "맑은 고딕" ;
+        font-size: 6px;
+        position: absolute; top: 15px; left: 146px;
+    }
+    
+    #navibar > ul > li a > .sub_tit3 {
+        font: Arial, "맑은 고딕" ;
+        font-size: 6px;
+        position: absolute; top: 15px; left: 284px;
+    } 
+    
+    #navibar >ul > li a > .sub_tit4 { 
+        font: Arial, "맑은 고딕" ;
+        font-size: 6px;
+        position: absolute; top: 15px; left: 380px;
+    }
+    
+    #navibar > ul > li a > .sub_tit5 { 
+        font: Arial, "맑은 고딕" ;
+        font-size: 6px;
+        position: absolute; top: 15px; left: 502px;
+    }
+    
+    #navibar > ul > li:hover > a {
+        color: #efd135;
+        background-color: #929293;
+    }
+
+    .smenu {
+        margin: 0; padding: 0;
+        list-style: none;
+        background-color: #3A3A3A;
+        height: 0; 
+        overflow: hidden;
+        transition: height .4s ease-out;
+    }
+    
+    .smenu > li {
+        width: 114px;
+    }
+    
+    #navibar > ul > li:nth-child(1):hover > .smenu {
+        height: 100px;
+    }
+
+    #navibar > ul > li:nth-child(2):hover > .smenu {
+        height: 250px; 
+    }
+
+    #navibar > ul > li:nth-child(3):hover > .smenu {
+        height: 100px;
+    }
+
+    #navibar > ul > li:nth-child(4):hover> .smenu {
+        height: 100px;
+    }
+
+    #navibar > ul > li:nth-child(5):hover> .smenu {
+        height: 100px;
+    }
+    
+    .smenu > li:hover > a {
+        color: #3a3939 !important;
+        background-color: #ccc;}
+</style>
+</head>
+<body>
+    <header id="navbox">         
+    <ul id="topmenu">
+    <li><a href="#">마이페이지</a> </li>
+    <li>｜</li>
+    <li><a href="#">로그인</a></li>
+    <li>｜</li>
+    <li><a href="#">회원가입</a> </li>
+    <li>｜</li>
+    <li><a href="#">예약확인</a></li>
+    </ul>
+    <nav id="navibar">
+    <ul>
+    <li><a href="#">예약하기<span class="sub_tit1">RESERVATION</span></a>
+    <ol class="smenu">
+    <li><a href="#">항공</a></li>
+    <li><a href="#">호텔</a></li>
+    
+    </ol>
+    </li>
+    <li><a href="#">패키지<span class="sub_tit2">PACKAGE</span></a>
+    <ol class="smenu">
+    <li><a href="#">일일관광</a></li>
+    <li><a href="#">허니문</a></li>
+    <li><a href="#">비지니스</a></li>
+    <li><a href="#">단체관광</a></li>
+    <li><a href="#">쇼핑관광</a></li>
+    </ol>
+    </li>
+    <li>
+    <a href="#">여행지전체<span class="sub_tit3">TRAVEL</span></a>
+    <ol class="smenu">
+    <li><a href="#">서부</a></li>
+    <li><a href="#">동부</a></li>
+    </ol>
+    </li>
+    <li><a href="#">서비스<span class="sub_tit4">SERVICE</span></a>
+    <ol class="smenu">
+    <li><a href="#">차량</a></li>
+    <li><a href="#">공항마중</a></li>
+    </ol>
+    </li>
+    <li><a href="#">이벤트<span class="sub_tit5">EVENT</span></a>
+    <ol class="smenu">
+    <li><a href="#">특가</a></li>
+    <li><a href="#">할인입장권</a></li>
+    </ol>
+    </li>
+    </ul>
+    </nav>
+    </header>
+    </body>
+    </html>
+    
